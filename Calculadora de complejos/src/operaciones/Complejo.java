@@ -22,6 +22,12 @@ public class Complejo {
         this.parteImaginaria = parteImaginaria;
     }
     
+    // Para obtener el conjugado de un número complejo 
+    public static Complejo conjugar(Complejo A) {
+        Complejo complejoConjugado = new Complejo(A.getParteReal(), - A.getParteImaginaria());
+        return complejoConjugado;
+    }
+    
     // Métodos de acceso
 
     public float getParteReal() {

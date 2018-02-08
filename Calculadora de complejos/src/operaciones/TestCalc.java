@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package operaciones;
 
 /**
@@ -11,8 +6,20 @@ package operaciones;
  */
 public class TestCalc {
     public static void main(String []args) {
-        Complejo complex1 = new Complejo(5, 8);
-        Complejo complex2 = new Complejo(3, -4);
-        System.out.println(Calc.sumar(complex1, complex2));
+        Complejo c1 = new Complejo(-3, 5);
+        Complejo c2 = new Complejo(13, -7);
+
+        Complejo res = Calc.sumar(c1, c2);   
+        System.out.println("Suma c1+c2: " + Calc.mostrarNumero(res));
+        
+        res = Calc.restar(c1, c2);   
+        System.out.println("Resta c1-c2: " + Calc.mostrarNumero(res));
+        
+        res = Calc.multiplicar(c1, c2);
+        System.out.println("Multiplicación c1*c2: " + Calc.mostrarNumero(res));
+        
+        res = Calc.dividir(c1, c2);
+        System.out.println("División c1/c2: " + Calc.mostrarNumero(res));
+        
     }
 }
