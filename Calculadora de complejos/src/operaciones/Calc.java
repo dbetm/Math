@@ -69,10 +69,8 @@ public class Calc {
         float imaginaria = complejo.getParteImaginaria();
         
         String resultado = Float.toString(real);
-        
         resultado += (imaginaria >= 0) ? " + i" : " - i";
         imaginaria = Math.abs(imaginaria);
-        
         resultado += (imaginaria != 1) ? Float.toString(imaginaria) : "";
         
         return resultado;
