@@ -1,7 +1,9 @@
-function y = fourier( t ) % función para calcular la serie truncada de Fourier
+function y = fourier( t, N ) % función para calcular la serie truncada de Fourier
     y = 0.0;
-    for n=1:10
-        y = y + (((2*((-1)^n))-2) / (n*pi)) * sin(2*n*pi*t);
+    for n=1:N
+        %y = y + (((2*((-1)^n))-2) / (n*pi)) * sin(2*n*pi*t);
+		%y = y + (4 / pi) * (1 / (2*n - 1)) * sin((2*n-1)*2*pi*t);
+		y = y + ((2*(1-(-1)^n)) / (n*pi)) * sin(2*n*pi*t);
     end
 end
 % en consola poner:

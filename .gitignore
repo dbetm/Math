@@ -9,3 +9,7 @@
 *.swp
 *.DS_Store
 *.lock
+/Criptography/nbproject/private/
+/Criptography/build/
+/SocketsFlujo/nbproject/private/
+/SocketsFlujo/build/
